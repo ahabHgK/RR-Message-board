@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+#msg-block {
+    width: 500px;
+    margin: 0 auto 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.msg-box {
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    animation: msg-animation 2s;
+}
+
+@keyframes msg-animation {
+    0%   {background: #ccc; top: 100px;}
+    100% {top: 0;}
+}
+
+#remove {
+    display: block;
+}
+
+form {
+    width: 504px;
+    margin: 10px auto;
+    font-size: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#user-name {
+    width: 416px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    text-indent: 10px;
+    border: 2px dotted #ccc;
+    font-family: Arial;
+    color: #000;
+    resize: none;
+}
+
+#leave-msg {
+    width: 500px;
+    height: 114px;
+    padding: 10px;
+    border: 2px dotted #ccc;
+    border-bottom: none;
+    color: #000;
+    font-size: 20px;
+    font-family: Arial;
+    resize: none;
+}
+
+#submit {
+    width: 84px;
+    height: 44px;
+    background: #ccc;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background: #888;
+    box-shadow: 2px 2px 2px #ccc;
+}
+
+.user-name-css {
+    margin: 10px 0;
+    font-family: Arial;
+    color: blueviolet;
+    font-size: 18px;
+}
+
+.msg-css {
+    width: 390px;
+    font-family: Arial;
+    font-size: 18px;
+    color: #000;
+    margin: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.UA-OS-display {
+    width: 150px;
+    text-align: center;
+    font-size: 10px;
+    line-height: 24px;
+}
+
+.nice-display {
+    width: 278px;
+}
+
+.nice {
+    width: 24px;
+    height: 24px;
+    background: url(./nice.png);
+    cursor: pointer;
+    position: relative;
+}
+
+.talk {
+    width: 24px;
+    height: 24px;
+    margin-left: 24px;
+    background: url(./talk.png);
+    cursor: pointer;
+}
+
+.talk-display {
+    width: 500px;
+    padding: 2px 20px;
+    border-bottom: 2px dotted #ccc;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.good {
+    border: 2px solid burlywood;
+    border-right: none;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 90px;
+    top: -4px;
+}
+
+.haha {
+    border: 2px solid burlywood;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 60px;
+    top: -4px;
+}
+
+.mid {
+    border: 2px solid burlywood;
+    border-left: none;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 30px;
+    top: -4px;
+}
+
+.mid::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 6px solid burlywood;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    position: absolute;
+    left: 30px;
+    top: 8px;
+}
