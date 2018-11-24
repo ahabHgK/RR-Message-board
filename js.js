@@ -113,26 +113,26 @@ document.getElementById('msg-block').addEventListener('click', function(e) {
         case 'nice':
             var niceId = e.target.id
             document.getElementById(niceId).innerHTML === ''
-                ? (addNice(niceId))
-                : (document.getElementById(niceId).innerHTML = '')
+            ? (addNice(niceId))
+            : (document.getElementById(niceId).innerHTML = '')
             break;
         case 'good':
             var goodId = e.target.id
             document.getElementById(`good-display${goodId[4]}`).style.display === 'none'
-                ?(document.getElementById(`good-display${goodId[4]}`).style.display = 'inline-block')
-                :(document.getElementById(`good-display${goodId[4]}`).style.display = 'none')
+            ? (document.getElementById(`good-display${goodId[4]}`).style.display = 'inline-block')
+            : (document.getElementById(`good-display${goodId[4]}`).style.display = 'none')
             break;
         case 'haha':
             var hahaId = e.target.id
             document.getElementById(`haha-display${hahaId[4]}`).style.display === 'none'
-                ? (document.getElementById(`haha-display${hahaId[4]}`).style.display = 'inline-block')
-                : (document.getElementById(`haha-display${hahaId[4]}`).style.display = 'none')
+            ? (document.getElementById(`haha-display${hahaId[4]}`).style.display = 'inline-block')
+            : (document.getElementById(`haha-display${hahaId[4]}`).style.display = 'none')
             break;
         case 'mid':
             var midId = e.target.id
             document.getElementById(`mid-display${midId[3]}`).style.display === 'none'
-                ? (document.getElementById(`mid-display${midId[3]}`).style.display = 'inline-block')
-                : (document.getElementById(`mid-display${midId[3]}`).style.display = 'none')
+            ? (document.getElementById(`mid-display${midId[3]}`).style.display = 'inline-block')
+            : (document.getElementById(`mid-display${midId[3]}`).style.display = 'none')
         default:
             break;
     }
